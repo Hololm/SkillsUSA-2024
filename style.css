@@ -57,6 +57,9 @@ nav {
     float: none;
 }
 
+footer {
+
+}
 
 .menu-toggle {
     display: none;
@@ -64,7 +67,14 @@ nav {
     cursor: pointer;
     color: white;
 }
+.element.active {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 
+.element.active::after {
+  width: 100%;
+}
 @media screen and (max-width: 426px) {
     .nav-item {
         display: none;
@@ -172,6 +182,20 @@ img {
 
 .element:hover::after {
   width: 100%;
+}
+
+.circle-image {
+    width: 50%; /* Set the width as needed */
+    border-radius: 10%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the image does not spill outside the container */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.circle-image img {
+    max-width: 100%; /* Ensures the image scales down if it's too wide */
+    max-height: 100%; /* Ensures the image scales down if it's too tall */
 }
 
 .nav-button {
