@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
 }
 
 .inter-font {
@@ -31,7 +31,8 @@ nav {
 .nav-item-logo {
     justify-content: flex-end;
     display: none;
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
     cursor: pointer;
 }
 
@@ -85,4 +86,17 @@ nav {
         display: flex;
         float:left;
     }
+}
+
+.logo {
+    height: 100%;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: auto;
+    max-height: 100%; /* Ensure the logo image does not exceed the height of its container */
+    width: auto; /* Maintain aspect ratio */
 }
