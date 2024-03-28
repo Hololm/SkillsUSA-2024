@@ -99,6 +99,9 @@ footer {
         padding: 8px 10px;
     }
 }
+    #dog {
+        width: 70%;
+    }
 
 @media screen and (max-width: 769px) {
     .nav-item a {
@@ -107,8 +110,12 @@ footer {
     .nav-button {
         padding: 2px 20px;
     }
+    #top {
+        flex-direction: column;
 }
 
+
+}
 @media screen and (min-width:767px) {
     .nav-item-logo {
         display: flex;
