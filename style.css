@@ -99,10 +99,18 @@ nav {
     margin: auto;
     width: 75vw;
     border-width: 15px;
-    border-style: solid;
-    border-color: green;
+    background-color: #5779ff;
     border-image: initial;
     padding: 50px;
+    color: white;
+    border-radius: 28px;
+}
+
+.circle {
+    background: #415aff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
 
 img {
