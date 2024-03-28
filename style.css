@@ -3,6 +3,18 @@ body {
     font-family: "Inter", Arial, sans-serif;
 }
 
+h1 {
+    font-size: 60px;
+}
+
+.p-big {
+    font-size: 18px;
+}
+
+.p-small {
+    font-size: 14px;
+}
+
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -152,7 +164,8 @@ img {
 }
 
 .element:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .element:hover::after {
