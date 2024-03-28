@@ -1,20 +1,10 @@
 body {
+    margin: 0;
     font-family: "Inter", Arial, sans-serif;
-    margin: 0 0 150px 0;
 }
 
 h1 {
     font-size: 60px;
-}
-
-footer {
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 5px 20px 5px 20px;
-    background-color: #DFDFDF;
-    width: 100%;
 }
 
 .p-big {
@@ -98,16 +88,6 @@ nav {
     .nav-button {
         padding: 8px 10px;
     }
-    h1 {
-        font-size: 30px;
-    }
-    .p-big {
-        font-size: 10px;
-}
-
-    .p-small {
-        font-size: 8px;
-}
 }
 
 @media screen and (max-width: 769px) {
@@ -117,18 +97,8 @@ nav {
     .nav-button {
         padding: 2px 20px;
     }
-    h1 {
-        font-size: 40px;
-    }
-    .p-big {
-        font-size: 12px;
 }
 
-    .p-small {
-        font-size: 10px;
-}
-
-}
 @media screen and (min-width:767px) {
     .nav-item-logo {
         display: flex;
@@ -139,13 +109,15 @@ nav {
 .box {
     display: flex;
     margin: auto;
-    max-width: 75%;
+    width: 75vw;
     border-width: 15px;
     background-color: #5779ff;
     border-image: initial;
     padding: 50px;
     color: white;
     border-radius: 28px;
+    justify-content:space-between;
+    align-items: center;
 }
 
 .circle {
@@ -153,8 +125,6 @@ nav {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    position: absolute;
-    z-index: 0;
 }
 
 img {
@@ -202,22 +172,6 @@ img {
 
 .element:hover::after {
   width: 100%;
-}
-
-.element:hover, .element.active {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.element.active {
-    background-color: #2e303a;
-    border-radius: 4px 4px 0 0;
-}
-
-.element.active::after {
-    width: 100%;
-    background-color: #ffa600;
-    height: 2px;
 }
 
 .nav-button {
