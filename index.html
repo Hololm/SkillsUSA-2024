@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,13 +7,27 @@
   <title>Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 <div>
   <nav>
-
+    <div style="float:right" class="nav-item-logo">
+      <img src="" alt="Logo">
+    </div>
+    <div class="menu-toggle">&#9776
+    </div>
+    <div class="nav-item">
+      <a href="">Get Help</a>
+      <a href="">Donate</a>
+      <a href="">Get Involved</a>
+      <a href="">What We Do</a>
+      <a href="">About</a>
+    </div>
   </nav>
-</div>
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-item').classList.toggle('active');
+    });
+  </script>
+  </div>
 </body>
-
 </html>
