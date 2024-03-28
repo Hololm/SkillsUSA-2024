@@ -73,12 +73,18 @@ nav {
         display: flex;
         float:right;
     }
+    .nav-button {
+        padding: 8px 10px;
+    }
 }
 
 @media screen and (max-width: 769px) {
     .nav-item a {
-    padding: 20px 20px;
+        padding: 20px 20px;
 }
+    .nav-button {
+        padding: 2px 20px;
+    }
 }
 
 @media screen and (min-width:767px) {
@@ -99,4 +105,53 @@ nav {
     height: auto;
     max-height: 100%; /* Ensure the logo image does not exceed the height of its container */
     width: auto; /* Maintain aspect ratio */
+}
+
+.element {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.element::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff7f50;
+  transition: width 0.3s ease;
+}
+
+.element:hover {
+  transform: scale(1.05);
+}
+
+.element:hover::after {
+  width: 100%;
+}
+
+.nav-button {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 4px 30px;
+  margin: 10px;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  transform: scale(1.1); /* Button expands on hover */
+  background-color: #ff9c66; /* Slightly lighter orange on hover */
 }
